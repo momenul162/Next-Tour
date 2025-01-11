@@ -124,7 +124,7 @@ export default function Navbar() {
         </Typography>
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           {pages.map((page) => (
-            <Link href={`/${page}`}>
+            <Link key={page} href={`/${page}`}>
               <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "black" }}>
                 {page}
               </Button>
