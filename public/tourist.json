@@ -1,0 +1,488 @@
+[
+  {
+    "id": "1",
+    "name": "Chittagong",
+    "image": "https://cdn.pixabay.com/photo/2022/03/28/13/18/sunset-7097495_1280.jpg",
+    "position": [22.3569, 91.7832 ],
+    "description": "Chittagong, a port city on the Bay of Bengal, is known for its rich culture, stunning beaches, and diverse attractions. From the serene hill tracts to bustling markets, Chittagong offers a unique experience.",
+    "recommendedDuration": 6,
+    "days": 6,
+    "images": [
+      {
+        "name": "Cox's Bazar Beach",
+        "image": "https://cdn.pixabay.com/photo/2019/02/12/04/28/bangladesh-3991311_640.jpg"
+      },
+      {
+        "name": "Patenga Beach",
+        "image": "https://old.thefinancialexpress.com.bd/uploads/1639194548.jpg"
+      },
+      {
+        "name": "Foy's Lake",
+        "image": "https://www.amazingtoursbd.com/tour_image/foys-lake-is-a-man-made-lake-in-chittagong.jpg"
+      },
+      {
+        "name": "Kaptai Lake",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM426VX92AHFsSWEanLDi-J_MGOt-7yiGMWg&s"
+      },
+      {
+        "name": "Rangamati",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqluJAygPiaWOk1vraiaH9tH7P0JxG-8_4A&s"
+      },
+      {
+        "name": "Saint Martin Island",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYyKMkd-HgafnXeKMSElFC0iCRjFtuP3CE07ULZuP96m6OtpZKYsUPCoqcI-E6nZ_J3Ho&usqp=CAU"
+      }
+    ],
+    "reviews": [
+          { "username": "BeachLover", "rating": 5, "comment": "Absolutely breathtaking! The beach is perfect for a peaceful escape." },
+          { "username": "Traveler123", "rating": 4, "comment": "A bit crowded, but the natural beauty makes up for it." }, { "username": "LocalExplorer", "rating": 5, "comment": "Great spot for an evening stroll with a cool breeze." },
+          { "username": "SunsetFan", "rating": 4, "comment": "Perfect for sunset views, but the beach is smaller." }, { "username": "IslandExplorer", "rating": 5, "comment": "A hidden gem with stunning beaches and crystal-clear water. Perfect for snorkeling." },
+          { "username": "BeachLover", "rating": 4, "comment": "The island is beautiful, but the transportation to get there can be challenging." }
+        ],
+    "activities": [
+      {
+        "name": "Cox's Bazar Beach",
+        "description": "The longest unbroken sea beach in the world, stretching over 120 kilometers. Known for its golden sands and tranquil atmosphere.",
+        "coordinates": { "latitude": 21.4272, "longitude": 92.0041 },
+        "recommendedVisitTime": "Morning",
+        "entryFee": "Free"
+        
+      },
+      {
+        "name": "Patenga Beach",
+        "description": "A popular beach near the port of Chittagong, offering a scenic view of ships and a lively atmosphere.",
+        "coordinates": { "latitude": 22.2562, "longitude": 91.7863 },
+        "recommendedVisitTime": "Evening",
+        "entryFee": "Free"
+      },
+      {
+        "name": "Foy's Lake",
+        "description": "A picturesque lake with boat rides, located in the hills, ideal for a peaceful day out.",
+        "coordinates": { "latitude": 22.3192, "longitude": 91.7917 },
+        "recommendedVisitTime": "Afternoon",
+        "entryFee": "Entry: BDT 100, Boat Ride: BDT 300"
+      },
+      {
+        "name": "Kaptai Lake",
+        "description": "A large man-made lake surrounded by hills, famous for boating and scenic views. It is located in the Kaptai National Park area.",
+        "coordinates": { "latitude": 22.4606, "longitude": 92.0828 },
+        "recommendedVisitTime": "Morning",
+        "entryFee": "Boat Ride: BDT 500"
+      },
+      {
+        "name": "Rangamati",
+        "description": "A hill district known for its lush green landscape, tribal culture, and the beautiful Kaptai Lake.",
+        "coordinates": { "latitude": 23.1423, "longitude": 92.1544 },
+        "recommendedVisitTime": "Afternoon",
+        "entryFee": "Free"
+      },
+      {
+        "name": "Saint Martin Island",
+        "description": "A tropical paradise in the Bay of Bengal, famous for its coral reefs, crystal-clear waters, and white sandy beaches.",
+        "coordinates": { "latitude": 20.6140, "longitude": 92.3265 },
+        "recommendedVisitTime": "Morning",
+        "entryFee": "Free"
+      }
+    ],
+    "bestTimeToVisit": "November to March",
+    "averageCostPerDay": "$50 - $100",
+    "localCuisine": [
+      { "dish": "Mezban Beef", "priceRange": "$5 - $10" },
+      { "dish": "Chingri Bhorta (Shrimp Mash)", "priceRange": "$4 - $8" }
+    ]
+  },
+  
+  {
+    "id": "2",
+      "name": "New York City",
+      "image": "https://cdn.pixabay.com/photo/2018/07/24/02/45/new-york-3558337_640.jpg",
+      "position": [ 40.7128, -74.006] ,
+      "description": "The city that never sleeps. Enjoy vibrant culture, iconic landmarks, and world-class dining. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores et numquam animi quod eveniet recusandae vel! Quos nam sapiente deleniti sit accusantium suscipit sequi eveniet! Quo accusamus esse sed",
+      "recommendedDuration": 5,
+      "days": 5,
+     "images": [
+  {
+    "name": "Statue of Liberty",
+    "image": "https://cdn.pixabay.com/photo/2018/07/24/02/45/new-york-3558337_640.jpg"
+  },
+  {
+    "name": "Central Park",
+    "image": "https://media.architecturaldigest.com/photos/62670cf1a841e371198e0b28/16:9/w_1280,c_limit/GettyImages-1347979016.jpg"
+  },
+  {
+    "name": "Empire State Building",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvhLWfyHvyWIt-G3Yjqk8C6loXXiejaaMKw&sg"
+  },
+  {
+    "name": "Brooklyn Bridge",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5L-oS0dWU6Uqk4qH5CaGq0_voyZ3ys_wjXg&s"
+  },
+  {
+    "name": "The Metropolitan Museum of Art",
+    "image": "https://www.architecturalrecord.com/ext/resources/Issues/2024/12-December/Metropolitan-Museum-of-Art-01.jpg?1733524219"
+  }
+],      
+  "reviews": [
+            { "username": "HistoryBuff", "rating": 5, "comment": "Inspiring and historic! The views from the pedestal are stunning." },
+            { "username": "Tourist101", "rating": 4, "comment": "A bit crowded, but worth it for the experience." },
+            { "username": "ArtLover", "rating": 5, "comment": "An incredible collection of art and history. You could spend an entire day here." },
+            { "username": "CultureFan", "rating": 4, "comment": "Amazing exhibits, but the museum is huge—plan your visit!" }
+          ],
+    "activities": [
+        {
+          "name": "Statue of Liberty",
+          "description": "An iconic symbol of freedom, located on Liberty Island. A must-visit landmark in New York City.",
+          "coordinates": { "latitude": 40.6892, "longitude": -74.0445 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "Ferry ticket: $24 (includes access to the island and pedestal)"
+          
+        },
+        {
+          "name": "Central Park",
+          "description": "A massive urban park in the heart of Manhattan, perfect for relaxation and outdoor activities.",
+          "coordinates": { "latitude": 40.7851, "longitude": -73.9683 },
+          "recommendedVisitTime": "Afternoon",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Empire State Building",
+          "description": "A world-famous skyscraper with breathtaking views of NYC from the observation deck.",
+          "coordinates": { "latitude": 40.7484, "longitude": -73.9857 },
+          "recommendedVisitTime": "Night",
+          "entryFee": "$44 for the main deck (86th floor)"
+        },
+        {
+          "name": "Brooklyn Bridge",
+          "description": "A historic suspension bridge offering stunning views of Manhattan and Brooklyn.",
+          "coordinates": { "latitude": 40.7061, "longitude": -73.9969 },
+          "recommendedVisitTime": "Sunset",
+          "entryFee": "Free"
+        },
+        {
+          "name": "The Metropolitan Museum of Art",
+          "description": "One of the largest and most prestigious art museums in the world, featuring exhibits from various cultures and time periods.",
+          "coordinates": { "latitude": 40.7794, "longitude": -73.9632 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "$30 for adults (suggested donation for NY residents)"
+        }
+      ],
+      
+      "bestTimeToVisit": "April to June, September to November",
+      "averageCostPerDay": "$150 - $300",
+      "localCuisine": [
+        { "dish": "New York-Style Pizza", "priceRange": "$3 - $5 per slice" },
+        { "dish": "Cheesecake", "priceRange": "$6 - $8" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Paris",
+      "image": "https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_640.jpg",
+      "position":  [48.8566, 2.3522 ],
+      "description": "The city of lights and love, known for iconic landmarks and romantic streets. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores et numquam animi quod eveniet recusandae vel! Quos nam sapiente deleniti sit accusantium suscipit sequi eveniet! Quo accusamus esse sed",
+      "recommendedDuration": 5,
+      "days": 5,
+      "images":[
+        {
+          "name": "Eiffel Tower",
+          "image": "https://example.com/images/eiffel_tower.jpg"
+        },
+        {
+          "name": "Louvre Museum",
+          "image": "https://example.com/images/louvre_museum.jpg"
+        },
+        {
+          "name": "Notre-Dame Cathedral",
+          "image": "https://example.com/images/notre_dame_cathedral.jpg"
+        },
+        {
+          "name": "Montmartre and Sacré-Cœur",
+          "image": "https://example.com/images/montmartre_sacre_coeur.jpg"
+        },
+        {
+          "name": "Champs-Élysées and Arc de Triomphe",
+          "image": "https://example.com/images/champs_elysees_arc_de_triomphe.jpg"
+        }
+      ],
+      "reviews": [
+        { "username": "RomanticTraveler", "rating": 5, "comment": "The sparkling lights at night are magical. Worth every penny!" },
+        { "username": "ViewSeeker", "rating": 4, "comment": "The views from the top are incredible, but expect long lines." },
+        { "username": "Shopaholic", "rating": 5, "comment": "The avenue is vibrant and lively, and the view from the Arc is spectacular." },
+        { "username": "HistoryEnthusiast", "rating": 4, "comment": "A wonderful mix of history and modern luxury, but it can get pricey." }
+      ],   
+      "activities": [
+        {
+          "name": "Eiffel Tower",
+          "description": "An architectural marvel. Climb to the top for breathtaking views of Paris.",
+          "coordinates": { "latitude": 48.8584, "longitude": 2.2945 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "$15 - $30"
+        },
+        {
+          "name": "Louvre Museum",
+          "description": "The world's largest art museum and a historic monument in Paris, home to the Mona Lisa and countless masterpieces.",
+          "coordinates": { "latitude": 48.8606, "longitude": 2.3376 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "$17"
+        },
+        {
+          "name": "Notre-Dame Cathedral",
+          "description": "A masterpiece of French Gothic architecture, known for its stunning facade and historic significance.",
+          "coordinates": { "latitude": 48.8529, "longitude": 2.3500 },
+          "recommendedVisitTime": "Afternoon",
+          "entryFee": "Free (for general entry)"
+        },
+        {
+          "name": "Montmartre and Sacré-Cœur",
+          "description": "A charming neighborhood known for its artistic history and the stunning Sacré-Cœur Basilica with panoramic views of Paris.",
+          "coordinates": { "latitude": 48.8867, "longitude": 2.3431 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "Free (for the basilica)"
+        },
+        {
+          "name": "Champs-Élysées and Arc de Triomphe",
+          "description": "A bustling avenue with high-end shops leading to the iconic Arc de Triomphe, offering a beautiful view from the top.",
+          "coordinates": { "latitude": 48.8738, "longitude": 2.2950 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "$13 (for the Arc de Triomphe)"
+        }
+      ],
+      "bestTimeToVisit": "April to June, September to October",
+      "averageCostPerDay": "$200 - $400",
+      "localCuisine": [
+        { "dish": "Croissant", "priceRange": "$2 - $4" },
+        { "dish": "Macarons", "priceRange": "$8 - $12" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Tokyo",
+      "image": "https://cdn.pixabay.com/photo/2013/11/25/09/52/japan-217882_640.jpg",
+      "position":  [35.6895, 139.6917] ,
+      "description": "Experience the perfect blend of tradition and technology in Japan's capital. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores et numquam animi quod eveniet recusandae vel! Quos nam sapiente deleniti sit accusantium suscipit sequi eveniet! Quo accusamus esse sed",
+      "recommendedDuration": 6,
+      "days": 6,
+      "images":[
+        {
+          "name": "Shibuya Crossing",
+          "image": "https://example.com/images/shibuya_crossing.jpg"
+        },
+        {
+          "name": "Tokyo Skytree",
+          "image": "https://example.com/images/tokyo_skytree.jpg"
+        },
+        {
+          "name": "Senso-ji Temple",
+          "image": "https://example.com/images/senso_ji_temple.jpg"
+        },
+        {
+          "name": "Tsukiji Outer Market",
+          "image": "https://example.com/images/tsukiji_outer_market.jpg"
+        },
+        {
+          "name": "Meiji Shrine",
+          "image": "https://example.com/images/meiji_shrine.jpg"
+        },
+        {
+          "name": "Akihabara",
+          "image": "https://example.com/images/akihabara.jpg"
+        }
+      ],   
+      "reviews": [
+        { "username": "CityLover", "rating": 5, "comment": "The lights and movement are surreal." },
+        { "username": "TravelerFan", "rating": 4, "comment": "Great vibe, but overwhelming during rush hours." },
+        { "username": "AnimeFan", "rating": 5, "comment": "A paradise for anime and tech enthusiasts. Endless shops and arcades!" },
+        { "username": "GadgetHunter", "rating": 4, "comment": "Amazing variety, but some stores are overwhelming." }
+      ],    
+      "activities": [
+        {
+          "name": "Shibuya Crossing",
+          "description": "The world's busiest pedestrian crossing, a symbol of Tokyo's energy.",
+          "coordinates": { "latitude": 35.6580, "longitude": 139.7016 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Tokyo Skytree",
+          "description": "A modern marvel and one of the world's tallest towers, offering stunning views of Tokyo.",
+          "coordinates": { "latitude": 35.7100, "longitude": 139.8107 },
+          "recommendedVisitTime": "Sunset",
+          "entryFee": "$15 - $30"
+        },
+        {
+          "name": "Senso-ji Temple",
+          "description": "Tokyo's oldest temple, located in Asakusa, famous for its beautiful architecture and traditional atmosphere.",
+          "coordinates": { "latitude": 35.7148, "longitude": 139.7967 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Tsukiji Outer Market",
+          "description": "A vibrant market offering fresh seafood, delicious street food, and a taste of Tokyo's culinary culture.",
+          "coordinates": { "latitude": 35.6652, "longitude": 139.7704 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Meiji Shrine",
+          "description": "A serene Shinto shrine located in a forested area of Tokyo, dedicated to Emperor Meiji and Empress Shoken.",
+          "coordinates": { "latitude": 35.6764, "longitude": 139.6993 },
+          "recommendedVisitTime": "Afternoon",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Akihabara",
+          "description": "A hub for electronics, anime, and otaku culture, offering a unique glimpse into modern Japanese pop culture.",
+          "coordinates": { "latitude": 35.7023, "longitude": 139.7745 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "Free (Shopping expenses vary)"
+        }
+      ],
+      "bestTimeToVisit": "March to May, October to November",
+      "averageCostPerDay": "$100 - $250",
+      "localCuisine": [
+        { "dish": "Sushi", "priceRange": "$10 - $30 per meal" },
+        { "dish": "Ramen", "priceRange": "$8 - $15 per bowl" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "London",
+      "image": "https://cdn.pixabay.com/photo/2021/08/15/07/35/ferris-wheel-6547089_640.jpg",
+      "position": [ 51.5074, -0.1278] ,
+      "description": "Explore the rich history, royal landmarks, and vibrant modern culture of London. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores et numquam animi quod eveniet recusandae vel! Quos nam sapiente deleniti sit accusantium suscipit sequi eveniet! Quo accusamus esse sed",
+      "recommendedDuration": 4,
+      "days": 4,
+      "images": [
+        {
+          "name": "Tower of London",
+          "image": "https://example.com/images/tower_of_london.jpg"
+        },
+        {
+          "name": "London Eye",
+          "image": "https://example.com/images/london_eye.jpg"
+        },
+        {
+          "name": "British Museum",
+          "image": "https://example.com/images/british_museum.jpg"
+        },
+        {
+          "name": "Buckingham Palace",
+          "image": "https://example.com/images/buckingham_palace.jpg"
+        }
+      ],
+      "reviews": [
+            { "username": "HistoryBuff", "rating": 5, "comment": "Fascinating history and the Crown Jewels are a must-see!" },
+            { "username": "LondonExplorer", "rating": 4, "comment": "A great experience, but can get crowded." },
+            { "username": "RoyalFan", "rating": 5, "comment": "The palace is stunning, and the Changing of the Guard is a must-see." },
+            { "username": "Tourist2023", "rating": 4, "comment": "A beautiful place, but better if you catch the guard ceremony." }
+          ],
+
+      "activities": [
+        {
+          "name": "Tower of London",
+          "description": "A historic castle and UNESCO World Heritage Site, home to the Crown Jewels and centuries of British history.",
+          "coordinates": { "latitude": 51.5081, "longitude": -0.0759 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "£29.90 for adults"     
+        },
+        {
+          "name": "London Eye",
+          "description": "A giant Ferris wheel on the South Bank of the River Thames, offering breathtaking views of London.",
+          "coordinates": { "latitude": 51.5033, "longitude": -0.1196 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "£32.50"
+        },
+        {
+          "name": "British Museum",
+          "description": "One of the world's greatest museums, housing a vast collection of art and artifacts from across the globe.",
+          "coordinates": { "latitude": 51.5194, "longitude": -0.1270 },
+          "recommendedVisitTime": "Afternoon",
+          "entryFee": "Free"
+        },
+        {
+          "name": "Buckingham Palace",
+          "description": "The official residence of the British monarch, famous for its Changing of the Guard ceremony.",
+          "coordinates": { "latitude": 51.5014, "longitude": -0.1419 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "£30 (for summer tours)"
+        }
+      ],
+      "bestTimeToVisit": "May to September",
+      "averageCostPerDay": "$200 - $350",
+      "localCuisine": [
+        { "dish": "Fish and Chips", "priceRange": "$10 - $15" },
+        { "dish": "English Breakfast", "priceRange": "$12 - $20" }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Dubai",
+      "image": "https://cdn.pixabay.com/photo/2020/09/16/04/02/skyline-5575251_640.jpg",
+      "position":  [25.276987, 55.296249] ,
+      "description": "A city of luxury, innovation, and stunning desert landscapes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores et numquam animi quod eveniet recusandae vel! Quos nam sapiente deleniti sit accusantium suscipit sequi eveniet! Quo accusamus esse sed",
+      "recommendedDuration": 4,
+      "days": 4,
+      "images": [
+        {
+          "name": "Burj Khalifa",
+          "image": "https://example.com/images/burj_khalifa.jpg"
+        },
+        {
+          "name": "Dubai Mall",
+          "image": "https://example.com/images/dubai_mall.jpg"
+        },
+        {
+          "name": "Desert Safari",
+          "image": "https://example.com/images/desert_safari.jpg"
+        },
+        {
+          "name": "Palm Jumeirah",
+          "image": "https://example.com/images/palm_jumeirah.jpg"
+        }
+      ],  
+      "reviews": [
+            { "username": "SkylineFan", "rating": 5, "comment": "The view from the top is absolutely mesmerizing, especially at sunset." },
+            { "username": "LuxuryTraveler", "rating": 4, "comment": "An unforgettable experience, but the tickets are expensive." },
+            { "username": "LuxuryExplorer", "rating": 5, "comment": "Stunning views and a luxurious experience. A must-visit!" },
+            { "username": "BeachFan", "rating": 4, "comment": "Beautiful, but some areas are restricted to hotel guests." }
+          ],
+
+      "activities": [
+        {
+          "name": "Burj Khalifa",
+          "description": "The tallest building in the world, offering panoramic views of Dubai from its observation decks.",
+          "coordinates": { "latitude": 25.1972, "longitude": 55.2744 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "AED 169 - AED 399"
+        },
+        {
+          "name": "Dubai Mall",
+          "description": "One of the largest malls in the world, featuring luxury shopping, dining, and attractions like the Dubai Aquarium.",
+          "coordinates": { "latitude": 25.1985, "longitude": 55.2796 },
+          "recommendedVisitTime": "Afternoon",
+          "entryFee": "Free (shopping and attractions vary)"
+        },
+        {
+          "name": "Desert Safari",
+          "description": "A thrilling experience in the Dubai desert with dune bashing, camel rides, and cultural performances.",
+          "coordinates": { "latitude": 24.9872, "longitude": 55.2960 },
+          "recommendedVisitTime": "Evening",
+          "entryFee": "AED 150 - AED 300"
+        },
+        {
+          "name": "Palm Jumeirah",
+          "description": "A man-made island in the shape of a palm tree, home to luxury hotels, beaches, and attractions like Atlantis, The Palm.",
+          "coordinates": { "latitude": 25.1120, "longitude": 55.1386 },
+          "recommendedVisitTime": "Morning",
+          "entryFee": "Free (attractions and hotels vary)"
+        }
+      ],      
+      "bestTimeToVisit": "November to March",
+      "averageCostPerDay": "$200 - $500",
+      "localCuisine": [
+        { "dish": "Shawarma", "priceRange": "$5 - $10" },
+        { "dish": "Al Harees", "priceRange": "$15 - $25" }
+      ]
+    }
+  ]
