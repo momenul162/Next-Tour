@@ -69,7 +69,7 @@ export default function Reviews() {
               >
                 <Rating value={review.rating} readOnly sx={{ mb: 2 }} />
                 <Typography variant="body1" color="textSecondary" sx={{ mb: 2 }}>
-                  "{review.comment}"
+                  {review.comment}
                 </Typography>
                 <Avatar
                   src="/static/images/avatar/3.jpg"
