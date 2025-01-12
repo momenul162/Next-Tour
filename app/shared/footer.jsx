@@ -1,8 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/GitHub";
@@ -11,6 +9,8 @@ import TwitterIcon from "@mui/icons-material/X";
 import { Grid } from "@mui/material";
 import Copyright from "../lib/copyright";
 import { Facebook } from "@mui/icons-material";
+import Link from "next/link";
+import "../globals.css";
 
 export default function Footer() {
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
         textAlign: "left",
       }}
     >
-      <Container sx={{ pt: 2, mx: "auto" }}>
+      <Container sx={{ py: 4, mx: "auto" }}>
         <Grid
           container
           spacing={{ xs: 3, md: 4, lg: 6 }}
@@ -51,9 +51,7 @@ export default function Footer() {
               </Typography>
               <Typography variant="body2" sx={{ color: "black", mb: 2 }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit
-                similique maxime sint, ex dicta ducimus saepe iusto magnam deserunt ullam impedit
-                placeat distinctio incidunt maiores alias optio itaque libero, rem exercitationem
-                soluta?
+                similique maxime sint.
               </Typography>
               <Stack
                 direction="row"
@@ -113,19 +111,19 @@ export default function Footer() {
             }}
           >
             <Typography sx={{ fontSize: "1.1rem", fontWeight: "medium" }}>Product</Typography>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link className="footer_link" variant="body2" href="#">
               Features
             </Link>
-            <Link color="text.secondary" variant="body2" href="#reviews">
+            <Link className="footer_link" variant="body2" href="#reviews">
               Reviews
             </Link>
-            <Link color="text.secondary" variant="body2" href="#highlights">
+            <Link className="footer_link" variant="body2" href="#highlights">
               Highlights
             </Link>
-            <Link color="text.secondary" variant="body2" href="#pricing">
+            <Link className="footer_link" variant="body2" href="#pricing">
               Pricing
             </Link>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link className="footer_link" variant="body2" href="#">
               FAQs
             </Link>
           </Grid>
@@ -141,13 +139,13 @@ export default function Footer() {
             }}
           >
             <Typography sx={{ fontSize: "1.1rem", fontWeight: "medium" }}>Company</Typography>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link className="footer_link" variant="body2" href="/about">
               About us
             </Link>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link className="footer_link" variant="body2" href="#">
               Careers
             </Link>
-            <Link color="text.secondary" variant="body2" href="/contact">
+            <Link className="footer_link" variant="body2" href="/contact">
               Contact
             </Link>
           </Grid>
@@ -163,34 +161,24 @@ export default function Footer() {
             }}
           >
             <Typography sx={{ fontSize: "1.1rem", fontWeight: "medium" }}>Legal</Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-              Terms
+            <Link className="footer_link" variant="body2" href="#">
+              Terms & Conditions
             </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Privacy
+            <Link className="footer_link" variant="body2" href="#">
+              Privacy & Policy
             </Link>
           </Grid>
         </Grid>
       </Container>
       <Box
         sx={{
-          p: 1,
           bgcolor: "black",
           width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-evenly",
+          p: 1,
+          textAlign: "center",
         }}
       >
         <Copyright />
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: { md: 2 } }}>
-          <Link sx={{ color: "white", textDecoration: "none" }} variant="body2" href="#">
-            Privacy Policy
-          </Link>
-          <Link sx={{ color: "white", textDecoration: "none" }} variant="body2" href="#">
-            Terms of Service
-          </Link>
-        </Box>
       </Box>
     </Box>
   );

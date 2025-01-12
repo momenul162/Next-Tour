@@ -14,6 +14,7 @@ import TourPlan from "../components/tour-details/tour-plan";
 import { MapSharp } from "@mui/icons-material";
 import FaceIcon from "@mui/icons-material/Face";
 import CustomGoogleMap from "../components/map-with-markers/google-map";
+import Link from "next/link";
 
 const TourDetails = () => {
   const { data, error } = usePlaces();
@@ -49,13 +50,15 @@ const TourDetails = () => {
             />
           </Typography>
 
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ boxShadow: "0px 4px 10px rgba(225, 135, 105, 0.5)", mt: 2 }}
-          >
-            Pay for Booking
-          </Button>
+          <Link href={"#booking-form"}>
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{ boxShadow: "0px 4px 10px rgba(225, 135, 105, 0.5)", mt: 2 }}
+            >
+              Pay for Booking
+            </Button>
+          </Link>
           <Box sx={{ mt: 6 }}>
             <Typography variant="h5" fontWeight="bold">
               Overview

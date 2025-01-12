@@ -5,7 +5,7 @@ export default function Copyright() {
     <Typography variant="body2" sx={{ color: "white", mt: 1 }}>
       {"Copyright © "}
       <Link sx={{ color: "white", textDecoration: "none" }} href="/">
-        NextTravel
+        Next Tour
       </Link>
       &nbsp;
       {new Date().getFullYear()}

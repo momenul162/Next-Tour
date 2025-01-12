@@ -5,19 +5,30 @@
 
 body {
   background: #f4f6f6;
+  margin: 0;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #333
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+  color: #482626
 }
 
 .swiper {
-  width: 100%;
-  height: 250px;
+  width: 80%;
+  height: 320px;
+  border-radius: 8px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  box-shadow: inset 0px 0px 5px 5px #d5cfc8;
-  border-radius: 5px;
+
 
   /* Center slide text vertically */
   display: flex;

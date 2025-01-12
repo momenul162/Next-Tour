@@ -13,12 +13,11 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import Link from "next/link";
 
-const pages = ["booked", "contact"];
+const pages = ["booked", "contact", "about"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 export default function Navbar() {
@@ -99,24 +98,13 @@ export default function Navbar() {
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <Link href={`/${page}`}>
                   <Button key={page} onClick={handleCloseNavMenu} sx={{ color: "black" }}>
-                    {page}
+                    {page === "about" ? "about us" : page}
                   </Button>
                 </Link>
               </MenuItem>
             ))}
           </Menu>
         </Box>
-        {/* <Box
-          component="img"
-          sx={{
-            height: 90,
-            display: { xs: "flex", md: "none" },
-            height: 75,
-            width: 170,
-          }}
-          alt="The house from the offer."
-          src="logo.png"
-        /> */}
         <Typography
           sx={{ fontSize: "2rem", fontWeight: "bold", display: { xs: "flex", md: "none" } }}
         >
@@ -126,7 +114,7 @@ export default function Navbar() {
           {pages.map((page) => (
             <Link key={page} href={`/${page}`}>
               <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "black" }}>
-                {page}
+                {page === "about" ? "about us" : page}
               </Button>
             </Link>
           ))}

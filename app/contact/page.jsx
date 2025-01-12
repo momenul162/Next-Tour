@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Grid,
@@ -12,8 +14,37 @@ import ContactCard from "../components/contact-card";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { useState } from "react";
 
 const ContactPage = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thanks for your submission");
+
+    // TODO:Fetch the data to upload database using API call
+
+    setData({
+      name: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: "",
+    });
+  };
   return (
     <Container>
       <ContactCard />
@@ -51,34 +82,72 @@ const ContactPage = () => {
           {/* Right Side Form */}
           <Grid item xs={12} md={6}>
             <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
-              <Grid container spacing={2}>
+              <Grid component={"form"} onSubmit={handleSubmit} container spacing={2}>
                 {/* Name and Email */}
                 <Grid item xs={12} sm={6}>
-                  <TextField fullWidth label="Your Name" variant="outlined" />
+                  <TextField
+                    fullWidth
+                    label="Your Name"
+                    name="name"
+                    value={data?.name}
+                    onChange={handleChange}
+                    variant="outlined"
+                    required
+                  />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <TextField fullWidth label="Email Address" variant="outlined" />
+                  <TextField
+                    fullWidth
+                    label="Email Address"
+                    name="email"
+                    type="email"
+                    value={data?.email}
+                    onChange={handleChange}
+                    variant="outlined"
+                    required
+                  />
                 </Grid>
                 {/* Phone and Subject */}
                 <Grid item xs={12} sm={6}>
-                  <TextField fullWidth label="Phone Number" variant="outlined" />
+                  <TextField
+                    fullWidth
+                    label="Phone Number"
+                    name="number"
+                    type="number"
+                    value={data?.number}
+                    onChange={handleChange}
+                    variant="outlined"
+                    required
+                  />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <TextField fullWidth label="Subject" variant="outlined" />
+                  <TextField
+                    fullWidth
+                    label="Subject"
+                    name="subject"
+                    value={data?.subject}
+                    onChange={handleChange}
+                    variant="outlined"
+                  />
                 </Grid>
                 {/* Message */}
                 <Grid item xs={12}>
                   <TextField
                     fullWidth
                     label="Write Message"
+                    name="message"
+                    value={data?.message}
+                    onChange={handleChange}
                     variant="outlined"
                     multiline
                     rows={4}
+                    required
                   />
                 </Grid>
                 {/* Submit Button */}
                 <Grid item xs={12}>
                   <Button
+                    type="submit"
                     fullWidth
                     variant="contained"
                     sx={{
