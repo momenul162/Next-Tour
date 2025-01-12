@@ -1,9 +1,10 @@
 // components/AboutSection.js
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Skeleton, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import ExpertTourGuides from "../components/about/tour-guide";
 import Reviews from "../components/review-slider";
+import { SkeletonList } from "../ui/skeleton";
 
 const AboutSection = () => {
   return (
@@ -88,6 +89,7 @@ const AboutSection = () => {
           />
         </Box>
       </Box>
+
       {/* REview component */}
       <Reviews />
       <ExpertTourGuides />

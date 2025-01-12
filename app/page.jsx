@@ -1,8 +1,9 @@
-import { Box, Button, CardMedia, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, CardMedia, Grid, Skeleton, TextField, Typography } from "@mui/material";
 import TouristArea from "./components/tourist-area";
 import { Suspense } from "react";
 import { MapWithMarkers } from "./components/map-with-markers";
 import Reviews from "./components/review-slider";
+import { SkeletonList } from "./ui/skeleton";
 
 export default function Home() {
   return (
@@ -114,7 +115,7 @@ export default function Home() {
       {/* Tourist places Cards */}
 
       <Box sx={{ position: "relative" }}>
-        <Suspense>
+        <Suspense fallback={<SkeletonList />}>
           <TouristArea />
         </Suspense>
         <CardMedia
@@ -136,7 +137,15 @@ export default function Home() {
         />
       </Box>
       {/* Google map for places */}
-      <MapWithMarkers />
+      <Suspense
+        fallback={
+          <Box>
+            <Skeleton variant="rectangular" height={500} sx={{ borderRadius: 2 }} />
+          </Box>
+        }
+      >
+        <MapWithMarkers />
+      </Suspense>
 
       {/* Customers Reviews */}
       <Reviews />

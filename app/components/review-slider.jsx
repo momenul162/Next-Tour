@@ -7,9 +7,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import usePlaces from "../hooks/usePlaces";
-import { useState } from "react";
 import { Avatar, Box, Card, Container, Rating, Typography } from "@mui/material";
 
 export default function Reviews() {
@@ -26,7 +25,7 @@ export default function Reviews() {
     <Container sx={{ mb: 4 }} id="reviews">
       <Box sx={{ textAlign: "center", pb: 3 }}>
         <Typography>Reviews & Testimonials</Typography>
-        <Typography sx={{ fontSize: { xs: 25, md: 40, xl: 55 }, fontWeight: 500, lineHeight: 1 }}>
+        <Typography sx={{ fontSize: { xs: 20, md: 35, xl: 42 }, fontWeight: 500, lineHeight: 1 }}>
           Top Reviews for Travel Lovers
         </Typography>
       </Box>
@@ -81,7 +80,7 @@ export default function Reviews() {
                     bottom: "22%",
                     width: 64,
                     height: 64,
-                    boxShadow: 10,
+                    boxShadow: 5,
                     mt: 4,
                   }}
                 />
