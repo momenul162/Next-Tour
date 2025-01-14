@@ -27,3 +27,17 @@ export const SkeletonList = () => {
     </Container>
   );
 };
+
+export const ReviewSkeleton = () => {
+  return (
+    <Container>
+      <Grid container spacing={4} justifyContent="center" padding={4}>
+        {[1, 2, 3].map((_, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <SkeletonCard />
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
+};

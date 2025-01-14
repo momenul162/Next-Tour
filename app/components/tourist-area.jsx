@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import dynamic from "next/dynamic";
 import usePlaces from "../hooks/usePlaces";
 import {
   Card,
@@ -14,7 +14,6 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Aos from "aos";
 
 export default function PlacesList() {
   const { data, error } = usePlaces();
@@ -26,15 +25,17 @@ export default function PlacesList() {
 
   if (error) return <p>Error: {error.message}</p>;
 
-  Aos.init({
-    duration: 1200,
-  });
-
   return (
     <Container sx={{ py: 3 }} id="pricing">
       <Box sx={{ textAlign: "center", pb: 3 }}>
         <Typography>Modern & Beautiful</Typography>
-        <Typography sx={{ fontSize: { xs: 20, md: 35, xl: 42 }, fontWeight: 500, lineHeight: 1 }}>
+        <Typography
+          sx={{
+            fontSize: { xs: 20, md: 35, xl: 42 },
+            fontWeight: 500,
+            lineHeight: 1,
+          }}
+        >
           Our Most Popular Adventures
         </Typography>
       </Box>
@@ -42,7 +43,6 @@ export default function PlacesList() {
         {data.map((place) => (
           <Grid item key={place.id} xs={12} sm={6} md={4}>
             <Card
-              data-aos="zoom-in"
               sx={{
                 maxWidth: 340,
                 maxHeight: 600,

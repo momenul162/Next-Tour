@@ -1,9 +1,10 @@
-import { Box, Button, CardMedia, Grid, Skeleton, TextField, Typography } from "@mui/material";
-import TouristArea from "./components/tourist-area";
+import { Box, Button, Grid, Skeleton, TextField, Typography } from "@mui/material";
 import { Suspense } from "react";
+import { ReviewSkeleton, SkeletonList } from "./ui/skeleton";
 import { MapWithMarkers } from "./components/map-with-markers";
 import Reviews from "./components/review-slider";
-import { SkeletonList } from "./ui/skeleton";
+import TouristArea from "./components/tourist-area";
+import { BgVideo } from "./components/bg-video";
 
 export default function Home() {
   return (
@@ -118,29 +119,13 @@ export default function Home() {
         <Suspense fallback={<SkeletonList />}>
           <TouristArea />
         </Suspense>
-        <CardMedia
-          component="video"
-          height="100%"
-          src="/videos/bg-video.mp4"
-          alt="bg video not loaded"
-          autoPlay
-          loop
-          muted
-          sx={{
-            objectFit: "cover",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: -2,
-            opacity: 0.2,
-          }}
-        />
+        <BgVideo />
       </Box>
       {/* Google map for places */}
       <Suspense
         fallback={
           <Box>
-            <Skeleton variant="rectangular" height={500} sx={{ borderRadius: 2 }} />
+            <Skeleton variant="rectangular" height={450} sx={{ borderRadius: 2 }} />
           </Box>
         }
       >
@@ -148,7 +133,9 @@ export default function Home() {
       </Suspense>
 
       {/* Customers Reviews */}
-      <Reviews />
+      <Suspense fallback={<ReviewSkeleton />}>
+        <Reviews />
+      </Suspense>
     </Box>
   );
 }

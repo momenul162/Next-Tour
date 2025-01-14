@@ -2,14 +2,10 @@
 
 import usePlaces from "@/app/hooks/usePlaces";
 import { Box, Container, Typography } from "@mui/material";
-import dynamic from "next/dynamic";
-
-const CustomGoogleMap = dynamic(() => import("../map-with-markers/google-map"), {
-  ssr: false, // Disable SSR for this component
-});
+import CustomGoogleMap from "./google-map";
 
 export const MapWithMarkers = () => {
-  const { data, error } = usePlaces();
+  const { data } = usePlaces();
 
   const locations = data?.map(({ name, position, description }) => ({
     name,
