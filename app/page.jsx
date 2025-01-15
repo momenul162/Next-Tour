@@ -1,10 +1,9 @@
 import { Box, Button, Grid, Skeleton, TextField, Typography } from "@mui/material";
-import { Suspense } from "react";
-import { ReviewSkeleton, SkeletonList } from "./ui/skeleton";
-import { MapWithMarkers } from "./components/map-with-markers";
 import Reviews from "./components/review-slider";
 import TouristArea from "./components/tourist-area";
 import { BgVideo } from "./components/bg-video";
+import { Suspense } from "react";
+import { MapWithMarkers } from "./components/map-with-markers";
 
 export default function Home() {
   return (
@@ -69,7 +68,6 @@ export default function Home() {
               type="date"
               variant="outlined"
               fullWidth
-              InputLabelProps={{ shrink: true }}
               sx={{ backgroundColor: "white" }}
             />
           </Grid>
@@ -79,7 +77,6 @@ export default function Home() {
             <TextField
               label="Choose..."
               select
-              SelectProps={{ shrink: true }}
               variant="outlined"
               fullWidth
               // onChange={(e) => e.target.value}
@@ -116,9 +113,7 @@ export default function Home() {
       {/* Tourist places Cards */}
 
       <Box sx={{ position: "relative" }}>
-        <Suspense fallback={<SkeletonList />}>
-          <TouristArea />
-        </Suspense>
+        <TouristArea />
         <BgVideo />
       </Box>
       {/* Google map for places */}
@@ -133,9 +128,7 @@ export default function Home() {
       </Suspense>
 
       {/* Customers Reviews */}
-      <Suspense fallback={<ReviewSkeleton />}>
-        <Reviews />
-      </Suspense>
+      <Reviews />
     </Box>
   );
 }

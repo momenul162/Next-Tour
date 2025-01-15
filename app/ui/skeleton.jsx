@@ -1,4 +1,4 @@
-import { Card, CardContent, Container, Grid, Skeleton } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Skeleton } from "@mui/material";
 
 export const SkeletonCard = () => {
   return (
@@ -39,5 +39,13 @@ export const ReviewSkeleton = () => {
         ))}
       </Grid>
     </Container>
+  );
+};
+
+export const MapSkeleton = () => {
+  return (
+    <Box>
+      <Skeleton variant="rectangular" height={450} sx={{ borderRadius: 2 }} />
+    </Box>
   );
 };

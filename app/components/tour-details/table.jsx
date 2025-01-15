@@ -1,13 +1,4 @@
-import React from "react";
-import {
-  Typography,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  TableContainer,
-  Paper,
-} from "@mui/material";
+import { Typography, Table, TableBody, TableCell, TableRow, TableContainer } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 

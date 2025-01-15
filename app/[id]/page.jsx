@@ -13,12 +13,17 @@ import Banner from "../components/tour-details/banner";
 import TourPlan from "../components/tour-details/tour-plan";
 import { MapSharp } from "@mui/icons-material";
 import FaceIcon from "@mui/icons-material/Face";
-import CustomGoogleMap from "../components/map-with-markers/google-map";
+// import CustomGoogleMap from "../components/map-with-markers/google-map";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 const TourDetails = () => {
-  const { data, error } = usePlaces();
+  const { data } = usePlaces();
   const { id } = useParams();
+
+  const CustomGoogleMap = dynamic(() => import("../components/map-with-markers/google-map"), {
+    ssr: false,
+  });
 
   const place = data?.find((p) => p.id === id);
   if (!place) {
@@ -70,19 +75,19 @@ const TourDetails = () => {
             {/* Button group */}
             <Box textAlign={"center"}>
               <ButtonGroup fullWidth size="large" color="text.info">
-                <Button>
+                <Button component="div">
                   <IconButton>
                     <AccessTime sx={{ color: "#FF6A3D" }} />
                   </IconButton>
                   {place?.recommendedDuration} Days
                 </Button>
-                <Button>
+                <Button component="div">
                   <IconButton>
                     <Person sx={{ color: "#FF6A3D" }} />
                   </IconButton>
                   Age 16+
                 </Button>
-                <Button>
+                <Button component="div">
                   <IconButton>
                     <MapSharp sx={{ color: "#FF6A3D" }} />
                   </IconButton>

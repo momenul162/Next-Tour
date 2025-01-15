@@ -3,16 +3,17 @@ import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import FacebookIcon from "@mui/icons-material/GitHub";
+import GitHub from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/X";
 import { Grid } from "@mui/material";
-import Copyright from "../lib/copyright";
 import { Facebook } from "@mui/icons-material";
 import Link from "next/link";
 import "../globals.css";
 
 export default function Footer() {
+  // const year = new Date().getFullYear();
+
   return (
     <Box
       sx={{
@@ -34,7 +35,6 @@ export default function Footer() {
               <Typography
                 sx={{
                   fontSize: "1.5rem",
-
                   fontWeight: "bold",
                   display: "flex",
                 }}
@@ -66,7 +66,7 @@ export default function Footer() {
                   aria-label="GitHub"
                   sx={{ alignSelf: "center" }}
                 >
-                  <FacebookIcon />
+                  <GitHub />
                 </IconButton>
                 <IconButton
                   color="inherit"
@@ -178,7 +178,15 @@ export default function Footer() {
           textAlign: "center",
         }}
       >
-        <Copyright />
+        <Typography variant="body2" sx={{ color: "white", mt: 1 }}>
+          {"Copyright © "}
+          <Link sx={{ color: "white", textDecoration: "none" }} href="/">
+            Next Tour
+          </Link>
+          &nbsp;
+          {/* {year} */}
+          2025
+        </Typography>
       </Box>
     </Box>
   );

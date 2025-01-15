@@ -33,7 +33,6 @@ export default function SearchTours() {
           type="date"
           variant="outlined"
           fullWidth
-          InputLabelProps={{ shrink: true }}
           sx={{ backgroundColor: "white" }}
         />
       </Grid>
@@ -43,7 +42,6 @@ export default function SearchTours() {
         <TextField
           label="Choose..."
           select
-          SelectProps={{ shrink: true }}
           variant="outlined"
           fullWidth
           onChange={(e) => e.target.value}

@@ -1,6 +1,8 @@
 import { Box, Grid, Typography, Divider } from "@mui/material";
 
 export default function TourPlan({ localPlace }) {
+  if (!localPlace || !localPlace.length) return null;
+
   return (
     <Box sx={{ padding: 4 }}>
       <Typography variant="h5" fontWeight="bold">
@@ -17,7 +19,7 @@ export default function TourPlan({ localPlace }) {
         <Grid
           container
           spacing={2}
-          key={item.id}
+          key={item.id || index}
           sx={{
             alignItems: "flex-start",
             marginBottom: 4,

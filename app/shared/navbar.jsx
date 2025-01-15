@@ -14,7 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Image from "next/image";
 import Link from "next/link";
 
 const pages = ["booked", "contact", "about"];

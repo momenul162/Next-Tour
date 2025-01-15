@@ -2,16 +2,22 @@
 
 import usePlaces from "@/app/hooks/usePlaces";
 import { Box, Container, Typography } from "@mui/material";
-import CustomGoogleMap from "./google-map";
+// import CustomGoogleMap from "./google-map";
+import dynamic from "next/dynamic";
 
 export const MapWithMarkers = () => {
   const { data } = usePlaces();
 
-  const locations = data?.map(({ name, position, description }) => ({
-    name,
-    position,
-    description,
-  }));
+  const locations = data?.map(
+    ({ name, position, description }) =>
+      ({
+        name,
+        position,
+        description,
+      } || [])
+  );
+
+  const CustomGoogleMap = dynamic(() => import("./google-map.jsx"), { ssr: false });
 
   return (
     <Container maxWidth="xl" sx={{ my: 10 }} id="highlights">

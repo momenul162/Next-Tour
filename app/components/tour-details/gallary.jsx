@@ -8,7 +8,6 @@ import {
 } from "@mui/material";
 
 const PhotoGallery = ({ images }) => {
-  console.log(images);
   return (
     <Container sx={{ mt: 4 }}>
       <Typography variant="h5" fontWeight="bold">

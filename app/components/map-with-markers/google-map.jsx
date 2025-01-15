@@ -1,9 +1,8 @@
 "use client";
 
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from "react-leaflet";
+import { Typography } from "@mui/material";
 import "leaflet/dist/leaflet.css";
-import { Box, Skeleton, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
 
 const CustomGoogleMap = ({
   zoom = 2,
